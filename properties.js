@@ -5,9 +5,20 @@ var shoppingCart ={
     mouse : 3,
     pen : 20
 }
-var penCount = shoppingCart.pen
+// var penCount = shoppingCart.pen
 // console.log(penCount);
-var properties = Object.keys(shoppingCart);
+var properties = (shoppingCart);
+// console.log(properties)
+// var properties = Object.values(shoppingCart);
 console.log(properties)
-var properties = Object.values(shoppingCart);
-console.log(properties)
+
+var propertyName = 'mouse';
+var propertyValue = shoppingCart[propertyName];
+// console.log(propertyName, propertyValue);
+
+shoppingCart.mouse = 15;
+console.log(shoppingCart);
+shoppingCart['mouse'] = 29;
+console.log(shoppingCart);
+shoppingCart[propertyName] = 89;
+console.log(shoppingCart);
